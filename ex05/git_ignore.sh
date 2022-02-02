@@ -1,4 +1,3 @@
 #!/bin/sh
 
-cat $cd $(dirname $0)/../.gitignore
-echo
+git ls-files --exclude-standard --ignored --other
