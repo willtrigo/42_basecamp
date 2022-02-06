@@ -6,13 +6,13 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 22:44:51 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/06 02:16:48 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/06 04:41:27 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putchar(char str[1])
+void	ft_putchar(char str)
 {
-	write(1, str, 1);
+	write(1, &str, 1);
 }
