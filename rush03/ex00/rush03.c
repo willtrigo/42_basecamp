@@ -6,49 +6,53 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 22:44:56 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/06 02:16:44 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/06 03:55:46 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_putchar.c"
 
-void verify(int, int, int, int);
+void add_chars(int, int, int, int);
+void verify_break_line(int, int, int, int);
 
 void rush(int x, int y)
 {
-	int x_line;
-	int y_column;
-
-	x_line = 0;
-	y_column = 0;
-
-	for (y_column = 0; y_column < y; y_column++)
-	{
-		for (x_line = 0; x_line < x; x_line++)
-		{
-			verify(x_line, x-1, y_column, y-1);
-		}
-		ft_putchar("\n");
-		x_line = 0;
-	}
+	if (x >= 0 && y >= 0)
+		add_chars(0, x, 0, y);
 }
 
-void verify(int x_line, int x, int y_column, int y)
+void add_chars(int x_line, int x_total, int y_column, int y_total)
 {
-	if(y_column == 0 || y_column == y)
+	if(y_column == 0 || y_column == y_total)
 	{
 		if (x_line == 0)
 			ft_putchar("A");
-		else if (x_line == x)
+		else if (x_line == x_total)
 			ft_putchar("C");
 		else
 			ft_putchar("B");
 	}
 	else
 	{
-		if (x_line == 0 || x_line == x)
+		if (x_line == 0 || x_line == x_total)
 			ft_putchar("B");
 		else
 			ft_putchar(" ");
 	}
+	verify_break_line(x_line, x_total, y_column, y_total);
+
+}
+
+void verify_break_line(int x_line, int x_total, int y_column, int y_total)
+{
+	if(x_line == x_total)
+	{
+		x_line = 0;
+		y_column++;
+		ft_putchar("\n");
+	}
+	else
+		x_line++;
+	if(y_column <= y_total && y_total > 0)
+		add_chars(x_line, x_total, y_column, y_total);
 }
