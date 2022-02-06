@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   rush03.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jrenato- < jrenato-@student.42sp.org.br    +#+  +:+       +#+        */
+/*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/05 22:44:56 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/06 22:58:09 by jrenato-         ###   ########.fr       */
+/*   Updated: 2022/02/07 00:42:12 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char str);
-
 void	add_chars(int x_line, int x_total, int y_column, int y_total);
 void	verify_break_line(int x_line, int x_total, int y_column, int y_total);
 
@@ -52,6 +51,6 @@ void	verify_break_line(int x_line, int x_total, int y_column, int y_total)
 	}
 	else
 		x_line++;
-	if (y_column <= y_total && y_total > 0)
+	if (y_column <= y_total)
 		add_chars(x_line, x_total, y_column, y_total);
 }
