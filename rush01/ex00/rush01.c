@@ -6,7 +6,7 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 06:37:07 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/07 01:04:58 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/07 01:19:06 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,11 @@ void	add_chars(int x_line, int x_total, int y_column, int y_total)
 {
 	if (y_column == 1 || y_column == y_total)
 	{
-		if ((x_line == 1 && y_column != y_total) || (x_line == x_total && y_column == y_total))
+		if (x_line == 1 && y_column != y_total)
 			ft_putchar('/');
-		else if ((x_line == 1 && y_column == y_total) || x_line == x_total)
+		else if (x_line == x_total && y_column == y_total)
+			ft_putchar('/');
+		else if ((x_line == 1 && y_column == y_total) || (x_line == x_total))
 			ft_putchar('\\');
 		else
 			ft_putchar('*');
