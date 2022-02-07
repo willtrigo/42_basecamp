@@ -6,7 +6,7 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/06 06:54:05 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/07 02:46:17 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/07 02:50:24 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,17 @@ void	rush(int x, int y)
 
 void	add_chars(int x_line, int x_total, int y_column, int y_total)
 {
-	if ((x_line == 1 && y_column != y_total) || x_line == x_total)
+	if (y_column == 1 || y_column == y_total)
+	{
+		if (x_line == 1 && y_column == 1)
 			ft_putchar('A');
-		else if ((x_line == 1 && y_column == y_total))
-			ft_putchar('C');
-		else if (x_line == x_total && y_column == y_total)
+		else if (x_line == x_total && y_column == 1)
+			ft_putchar('A');
+		else if ((x_line == 1 && y_column == y_total) || x_line == x_total)
 			ft_putchar('C');
 		else
 			ft_putchar('B');
+	}
 	else
 	{
 		if (x_line == 1 || x_line == x_total)
