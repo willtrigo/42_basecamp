@@ -6,13 +6,11 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/10 02:59:47 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/10 20:19:25 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/10 20:30:30 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <string.h>
-#include <stdio.h>
 
 void	print_numbers(char c);
 
