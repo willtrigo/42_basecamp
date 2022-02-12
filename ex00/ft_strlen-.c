@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush-01.c                                          :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/12 00:50:10 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/12 16:30:44 by dade-jes         ###   ########.fr       */
+/*   Created: 2022/02/12 04:52:35 by dade-jes          #+#    #+#             */
+/*   Updated: 2022/02/12 05:42:25 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_check_map(char *str);
-void	ft_putchar(int i, int breakline, char *c);
-
-#define ERR "Error"
-
-int	main(int argc, char *argv[])
+int	ft_strlen(char *str)
 {
-	if (argc == 2)
-	{
-		ft_check_map(argv[1]);
-	}
-	else
-		ft_putchar(5, 1, ERR);
-	return (0);
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }

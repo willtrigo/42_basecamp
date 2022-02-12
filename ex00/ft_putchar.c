@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush-01.c                                          :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/12 00:50:10 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/12 16:30:44 by dade-jes         ###   ########.fr       */
+/*   Created: 2022/02/09 22:29:46 by dade-jes          #+#    #+#             */
+/*   Updated: 2022/02/12 04:37:10 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_check_map(char *str);
-void	ft_putchar(int i, int breakline, char *c);
+#include <unistd.h>
 
-#define ERR "Error"
-
-int	main(int argc, char *argv[])
+void	ft_putchar(int i, int breakline, char *c)
 {
-	if (argc == 2)
-	{
-		ft_check_map(argv[1]);
-	}
-	else
-		ft_putchar(5, 1, ERR);
-	return (0);
+	write(1, c, i);
+	if (breakline == 1)
+		write(1, "\n", 1);
 }
