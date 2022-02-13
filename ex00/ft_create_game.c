@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_create_game.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: hbernard <hbernard@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: paulvict < paulvict@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 05:42:06 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/13 22:12:57 by hbernard         ###   ########.fr       */
+/*   Updated: 2022/02/13 23:30:46 by paulvict         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,8 +38,37 @@ void	ft_create_game(int type_size, char *str, int len_str)
 		i++;
 	}
 	
+	int *board;
+	int i_board;
+	int ii;
 	
-
+	if(type_size == 3)
+	{
+		board = (int*) malloc (9 * sizeof(int));
+	}
+	else
+	{
+		board = (int*) malloc((type_size * type_size) * sizeof(int));
+		i = 0;
+		i_board = 0;
+		ii = 1;
+		while(i < i_beholder)
+		{
+			board[i_board] = 1;
+			printf("%d", board[i_board]);
+			i_board++;
+			i++;	
+			if(ii >= type_size)
+			{
+				ii = 0;
+				printf("\n");
+			}
+			ii++;
+		}
+	}
+	free (beholder);
+	free (board);
+	
 	// int		i;
 	// char	*game;
 
