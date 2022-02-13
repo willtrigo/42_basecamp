@@ -3,38 +3,61 @@
 /*                                                        :::      ::::::::   */
 /*   ft_create_game.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
+/*   By: hbernard <hbernard@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 05:42:06 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/13 05:27:10 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/13 22:12:57 by hbernard         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <stdlib.h>
 
 void	ft_putchar(int i, int breakline, char *c);
+void	ft_strtoint(char str);
 
 #define ERR "Error"
 
-void	ft_create_game(int type_size, char *str)
+void	ft_create_game(int type_size, char *str, int len_str)
 {
-	int		i;
-	char	*game;
-
-	game = str;
-	if (type_size == 3)
-		game = "1 2 3 \n 2 3 4 \n  3 4 1 \n\0";
-	if (type_size == 4)
-		game = "1 2 3 4\n 2 3 1 4 \n 3 2 4 1 \n 3 2 4 1 \n\0";
-	if (type_size == 5)
-		game = "1 2 3 5 1 \n 2 5 2 3 4 \n 1 3 3 4 1 \n 1 3 3 4 1 \n 1 3 3 4 1 \n\0";
+	int i;
+	int i_beholder;
+	int *beholder;
+	
+	beholder = (int*) malloc((type_size * type_size) * sizeof(int));
 	i = 0;
-	while (game[i] != '\0')
+	i_beholder = 0;
+	while(i < len_str)
 	{
-		if (game[i] != ' ')
-			ft_putchar(1, 0, &game[i]);
+		if (str[i] != ' ')
+		{
+			beholder[i_beholder] = (int)(str[i] - 48);
+			//printf("endereço de beholder[%d] = %p \t valor = %d\n",i_beholder, &beholder[i_beholder], beholder[i_beholder]);
+			i_beholder++;
+		}
 		i++;
 	}
+	
+	
+
+	// int		i;
+	// char	*game;
+
+	// game = str;
+	
+	// if (type_size == 3)
+	// 	game = "1 2 3 \n 2 3 4 \n  3 4 1 \n\0";
+	// if (type_size == 4)
+	// 	game = "1 2 3 4\n 2 3 1 4 \n 3 2 4 1 \n 3 2 4 1 \n\0";
+	// if (type_size == 5)
+	// 	game = "1 2 3 5 1 \n 2 5 2 3 4 \n 1 3 3 4 1 \n 1 3 3 4 1 \n 1 3 3 4 1 \n\0";
+	// i = 0;
+	// while (game[i] != '\0')
+	// {
+	// 	if (game[i] != ' ')
+	// 		ft_putchar(1, 0, &game[i]);
+	// 	i++;
+	// }
 }
 /*
 int *linha1;
