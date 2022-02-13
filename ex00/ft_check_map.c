@@ -6,38 +6,36 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 05:29:07 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/12 18:13:07 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/13 06:58:56 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
+int		ft_check_numbers(int len, int max, char *str);
 int		ft_strlen(char *str);
 void	ft_putchar(int i, int breakline, char *c);
-void	ft_create_game(char *resolution);
+void	ft_create_game(int type_size, char *str);
 
-#define MAP_SIZE_3X3 23
+#define MAP_SIZE_3X3 17
 #define MAP_SIZE_4X4 31
-#define MAP_SIZE_5X5 39
-#define ERR "Error"
+#define MAP_SIZE_5X5 49
 
 void	ft_check_map(char *str)
 {
-	int		len_str;
+	int	len_str;
 
 	len_str = ft_strlen(str);
-	if (len_str == MAP_SIZE_3X3)
+	if (len_str == MAP_SIZE_3X3 && ft_check_numbers(len_str, 3, str))
 	{
-		ft_create_game("1 2 3 4 \n 2 3 4 1 \n  3 4 1 2 \n 4 1 2 3 \n");
+		ft_create_game(3, str);
 	}
-	else if (len_str == MAP_SIZE_4X4)
+	else if (len_str == MAP_SIZE_4X4 && ft_check_numbers(len_str, 4, str))
 	{
-		ft_create_game("1 2 3 4 \n 2 3 4 1 \n  3 4 1 2 \n 4 1 2 3 \n");
+		ft_create_game(4, str);
 	}
-	else if (len_str == MAP_SIZE_5X5)
+	else if (len_str == MAP_SIZE_5X5 && ft_check_numbers(len_str, 5, str))
 	{
-		ft_create_game("1 2 3 4 \n 2 3 4 1 \n  3 4 1 2 \n 4 1 2 3 \n");
+		ft_create_game(5, str);
 	}
 	else
-		ft_putchar(5, 1, ERR);
+		ft_putchar(5, 1, "Error");
 }
