@@ -6,7 +6,7 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/12 05:42:06 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/14 02:02:51 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/14 03:17:21 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,44 @@ void	ft_create_game(int board_size, char *str, int len_str)
 	i = 0;
 	while (i < total)
 	{
-		if (beholder[i] == 1)
-			board[i] = 4;
+		// printf("%d\n", i*100/total);
+		// printf("25 %d\n", (board_size*1)*100/total);
+		// printf("50 %d\n", (board_size*2)*100/total);
+		// printf("75 %d\n", (board_size*3)*100/total);
+
+		if (i*100/total < (board_size*1)*100/total)
+		{
+			if(beholder[i] == 1)
+				board[i] = board_size;
+		}
+		else if (i*100/total < (board_size*2)*100/total)
+		{
+			if(beholder[i] == 1)
+			{
+				int valor;
+				valor = (board_size * (i - (board_size-1))-1);
+				board[valor] = board_size;
+			}
+		}
+		else if (i*100/total < (board_size*3)*100/total)
+		{
+			if(beholder[i] == 1)
+				board[i] = board_size;
+		}
+		else if (i*100/total < (board_size*4)*100/total)
+		{
+			if(beholder[i] == 1)
+				board[i+board_size] = board_size;
+		}
+		// else if (i*100/total < 50)
+		// {
+		// 	if(beholder[i] == 1)
+		// 		board[i+4] = 4;
+		// }
 		/*if(beholder[i] == 1)
 		{
-			// 16 / 4 * 0
-			if(board[i] < (total / board_size * i))
+			// 16 / 4 * 0 4 * 2
+			if(board[i] < (total / board_size + i))
 				board[i] = 4
 		}
 			if()
