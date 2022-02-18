@@ -6,7 +6,15 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 00:56:33 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/18 00:56:35 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/18 02:05:41 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+void	ft_ultimate_div_mod(int *a, int *b)
+{
+	int	swap;
+
+	swap = *a;
+	*a = *a / *b;
+	*b = swap % *b;
+}
