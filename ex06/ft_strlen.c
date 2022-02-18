@@ -6,7 +6,16 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 03:15:23 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/18 03:15:24 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/18 03:49:55 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_strlen(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
+}
