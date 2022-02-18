@@ -6,7 +6,7 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 05:59:10 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/18 08:46:08 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/18 12:39:28 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,7 @@ void	ft_sort_int_tab(int *tab, int size)
 		{
 			swap_tab_sort(&tab[i], &tab[i + 1]);
 			i = 0;
+			continue ;
 		}
 		i++;
 	}
