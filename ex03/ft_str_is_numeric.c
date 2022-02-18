@@ -6,7 +6,19 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 18:32:52 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/18 18:32:57 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/18 20:49:37 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdio.h>
+
+int ft_str_is_numeric(char *str)
+{
+	int	i;
+
+	i = -1;
+	while (str[++i])
+		if (str[i] < 0 || str[i] > 9)
+			return 0;
+	return 1;
+}
