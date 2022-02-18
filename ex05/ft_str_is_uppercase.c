@@ -6,7 +6,17 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/18 21:15:52 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/18 21:15:53 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/18 21:16:57 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_str_is_uppercase(char *str)
+{
+	int	i;
+
+	i = -1;
+	while (str[++i])
+		if (str[i] > 'Z' || str[i] < 'A')
+			return (0);
+	return (1);
+}
