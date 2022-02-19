@@ -6,7 +6,20 @@
 /*   By: dade-jes <willtrigo@gmail.com>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/19 02:39:52 by dade-jes          #+#    #+#             */
-/*   Updated: 2022/02/19 02:39:55 by dade-jes         ###   ########.fr       */
+/*   Updated: 2022/02/19 02:46:46 by dade-jes         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+char	*ft_strlowcase(char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] >= 65 && str[i] <= 90)
+			str[i] = str[i] + 32;
+		i++;
+	}
+	return (str);
+}
