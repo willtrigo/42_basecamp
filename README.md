@@ -30,8 +30,8 @@ The results of the Basecamp are communicated to the candidates, and those who pr
 
 ## Projects
 
-[![](https://img.shields.io/badge/Project-Shell_00-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_00)
-[![](https://img.shields.io/badge/Project-Shell_01-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_01)
+[![](https://img.shields.io/badge/Project-shell_00-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_00)
+[![](https://img.shields.io/badge/Project-shell_01-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_01)
 
 [![](https://img.shields.io/badge/Project-c_00-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_00)
 [![](https://img.shields.io/badge/Project-c_01-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_01)
