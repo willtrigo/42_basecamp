@@ -1,6 +1,8 @@
 # 🏕️ 42sp - Basecamp
 
-![image](img/basecamp.png)
+<picture>
+	<img alt="Basecamp" src="img/basecamp.png">
+</picture>
 
 ##
 
