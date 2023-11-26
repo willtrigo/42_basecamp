@@ -3,6 +3,11 @@
 <picture>
 	<img alt="Basecamp" src="img/basecamp.png">
 </picture>
+<picture >
+	<img alt="OS" src="https://img.shields.io/badge/Linux-OS?&label=OS&labelColor=gray&color=dodgerblue">
+	<img alt="Language" src="https://img.shields.io/badge/Shell_|_C-Language?&label=Language&labelColor=gray&color=dodgerblue">
+	<img alt="Status" src="https://img.shields.io/badge/Completed-Status?&label=Status&labelColor=gray&color=green">
+</picture>
 
 ##
 
@@ -30,12 +35,12 @@ The results of the Basecamp are communicated to the candidates, and those who pr
 
 ## Projects
 
-[![](https://img.shields.io/badge/Project-shell_00-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_00)
-[![](https://img.shields.io/badge/Project-shell_01-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_01)
+[![](https://img.shields.io/badge/Project-shell_00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_00)
+[![](https://img.shields.io/badge/Project-shell_01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/shell/shell_01)
 
-[![](https://img.shields.io/badge/Project-c_00-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_00)
-[![](https://img.shields.io/badge/Project-c_01-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_01)
-[![](https://img.shields.io/badge/Project-c_02-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_02)
+[![](https://img.shields.io/badge/Project-c_00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_00)
+[![](https://img.shields.io/badge/Project-c_01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_01)
+[![](https://img.shields.io/badge/Project-c_02-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/c/c_02)
 
-[![](https://img.shields.io/badge/Project-rush00-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/rush/rush00)
-[![](https://img.shields.io/badge/Project-rush01-%231283C4?&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/rush/rush01)
+[![](https://img.shields.io/badge/Project-rush00-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/rush/rush00)
+[![](https://img.shields.io/badge/Project-rush01-skyblue?style=for-the-badge&&logo=42)](https://github.com/willtrigo/42_basecamp/tree/main/rush/rush01)
