@@ -31,7 +31,7 @@ During the process, candidates do not receive traditional lectures or formal ins
 
 ## Continuous assessment
 
-Throughout the Piscine, candidates are continuously evaluated. They need to reach specific milestones and complete projects to advance to the next stages of the selection process. Candidates who demonstrate good performance during the Basecamp may be approved and invited to join the free education program at 42 São Paulo.
+Throughout the Basecamp, candidates are continuously evaluated. They need to reach specific milestones and complete projects to advance to the next stages of the selection process. Candidates who demonstrate good performance during the Basecamp may be approved and invited to join the free education program at 42 São Paulo.
 
 ## Results
 
