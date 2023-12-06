@@ -1,6 +1,6 @@
 # Rush 00 - Basecamp
 
-Rush 00 is an intensive project designed to test and refine the programming skills of aspiring developers during their first weeks at 42 school's Piscine. This project delves into the fundamentals of C programming, pushing participants to tackle tasks like:
+Rush 00 is an intensive project designed to test and refine the programming skills of aspiring developers during their first weeks at 42 school's Basecamp. This project delves into the fundamentals of C programming, pushing participants to tackle tasks like:
 
 - Mastering file I/O: Reading and writing data from files efficiently.
 - Conquering algorithms: Implementing algorithms like the infamous "find the biggest square" challenge (BSQ).
@@ -17,7 +17,7 @@ Rush 00 is more than just a project, it's a baptism by fire for aspiring program
 - File I/O: Mastering file manipulation techniques to read, write, and process data from files.
 - Data structures: Utilizing arrays and pointers to store and manage data efficiently.
 - Testing and debugging: Developing a rigorous approach to testing code and identifying and fixing bugs.
-- Teamwork: Collaborating effectively with other Piscine participants to tackle the project together.
+- Teamwork: Collaborating effectively with other Basecamp participants to tackle the project together.
 
 ## Bonus
 
