@@ -1,6 +1,6 @@
 # Shell 00 - Basecamp
 
-Shell 00 is the first list of exercise in the C Basecamp. It covers the basics of the Unix shell environment, including shell commands, scripting, and Git version control. The exercises are designed to help participants develop a solid understanding of the Unix shell and its usage in software development. Here is a summary of the topics covered in Shell 00:
+Shell 00 is the first list of exercise in the Basecamp. It covers the basics of the Unix shell environment, including shell commands, scripting, and Git version control. The exercises are designed to help participants develop a solid understanding of the Unix shell and its usage in software development. Here is a summary of the topics covered in Shell 00:
 
 ## Shell Basics
 
